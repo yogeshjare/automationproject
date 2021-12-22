@@ -1,0 +1,26 @@
+package imp;
+
+public class Arnstng_num {
+	public static void main(String[] args) {
+		int no=150,temp1,temp2,count=0,num,arm=0;
+	     
+	    temp1=no;
+	  while(temp1 != 0){
+	    count++;
+	    temp1= temp1/10;
+	 }
+	   temp2=no;
+	  while(temp2 != 0){
+	   num=temp2%10;
+	   arm+=Math.pow(num,count);
+	   temp2=temp2/10;
+	 }
+	   if(no==arm){
+	   System.out.println("this is armstrong number");
+	 }
+	 else{
+	  System.out.println("this is not armstrong number");
+	 }
+	}
+}
+
