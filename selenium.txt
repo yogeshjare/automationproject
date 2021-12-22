@@ -1,0 +1,21 @@
+package testNG;
+
+import org.testng.Reporter;
+import org.testng.annotations.Test;
+
+public class demo {
+	@Test // without main method run program @Test run back end to main method
+	public void test1() {
+		Reporter.log("testNG running successfully tc01", true);// true print on console
+	}
+
+	@Test
+	public void tast2() {
+		Reporter.log("testNG running successfully tc02", true);
+	}
+
+	@Test
+	public void tast3() {
+		Reporter.log("testNG running successfully tc02", true);
+	}
+}
